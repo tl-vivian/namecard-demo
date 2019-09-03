@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700&display=swap&subset=chinese-traditional");
+:root {
+  --primary: #eb5490;
+  --primary10: rgba(235, 84, 144, 0.1);
+  --secondary1: #ffc02d;
+  --secondary5: #ffa25a;
+  --secondary2: #4fccf5;
+  --secondary3: #92dcd0;
+  --secondary4: #926ac7;
+  --black: #222222;
+  --black50: rgba(34, 34, 34, 0.5);
+  --black75: rgba(34, 34, 34, 0.75);
+  --black25: rgba(34, 34, 34, 0.25);
+  --grey1: #444444;
+  --grey2: #888888;
+  --lightGrey1: #ebebeb;
+  --lightGrey2: #f6f6f6;
+  --white: #ffffff;
+  --white90: rgba(255, 255, 255, 0.9);
+  --white75: rgba(255, 255, 255, 0.75);
+  --white50: rgba(255, 255, 255, 0.5);
+}
+
+.Headline {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.Title1 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.Body1 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.Title2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+}
+
+.Body2 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+}
+
+.Caption {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.33;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: var(--lightGrey1);
+  overscroll-behavior: none;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+.top-shadow {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -9;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+.nav-scroll {
+  background-color: rgba(34, 34, 34, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.status-bar {
+  margin: 0 -16px;
+  min-width: 100%;
+  height: 20px;
+  background-image: url("img/statusBar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.buttons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.share-button,
+.options-button {
+  margin-left: 8px;
+}
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 16px;
+}
+
+.nav-bar .follow-button {
+  height: 36px;
+  width: 80px;
+  background-color: var(--white);
+  color: var(--grey2);
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-wrapper {
+  overscroll-behavior: none;
+}
+.profile-imgs {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -10;
+}
+.profile-img {
+  background-size: auto 100%;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.img1 {
+  background-image: url("img/card-img-1.png");
+}
+.img2 {
+  background-image: url("img/card-img-2.png");
+}
+.img3 {
+  background-image: url("img/card-img-3.png");
+}
+
+.profile-scale {
+  background-size: auto 120%;
+  transition: all 0.3s ease-in-out;
+}
+.blank {
+  height: calc(100vh - 225px);
+}
+.profile-info {
+  height: 225px;
+  width: 100%;
+  background-image: url("img/bottomGradientShadeWhite.png");
+  position: relative;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: calc(100vh - 225px);
+}
+.level-badge {
+  position: absolute;
+  bottom: 80px;
+}
+.nickname {
+  position: absolute;
+  bottom: 80px;
+  left: 68px;
+  color: var(--grey1);
+}
+.profile-stats {
+  position: absolute;
+  bottom: 32px;
+}
+.profile-like {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid var(--grey2);
+  background-image: url("img/like.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 24px;
+  bottom: 32px;
+}
+.profile-content {
+  min-height: calc(100vh - 64px);
+  width: 100%;
+  background-color: var(--white90);
+  padding: 16px 24px 24px 24px;
+}
+
+.section-title {
+  color: var(--grey1);
+  margin-bottom: 16px;
+}
+
+.about-me {
+  min-height: calc(100vh - 272px);
+}
+
+.divider {
+  width: 100%;
+  height: 16px;
+  border-top: 1px solid var(--grey2);
+}
+.content {
+  color: var(--grey1);
+  padding-bottom: 16px;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.posts {
+  height: 100px;
+  width: 560px;
+}
+.post {
+  height: 96px;
+  width: 96px;
+  border: 1px solid var(--lightGrey1);
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 8px;
+}
+.post1 {
+  background-image: url("img/post1.png");
+}
+.post2 {
+  background-image: url("img/post2.png");
+}
+.post3 {
+  background-image: url("img/post3.png");
+}
+.post4 {
+  background-image: url("img/post4.png");
+}
+.post5 {
+  background-image: url("img/post5.png");
+}

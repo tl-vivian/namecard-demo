@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>名片 Demo</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="swiper-container profile-imgs">
+      <div class="swiper-wrapper ">
+        <div class="swiper-slide profile-img img1"></div>
+        <div class="swiper-slide profile-img img2"></div>
+        <div class="swiper-slide profile-img img3"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="wrapper">
+      <img src="img/topGradientShadeDark.png" alt="" class="top-shadow" />
+      <div class="nav-bar">
+        <div class="status-bar"></div>
+        <div class="buttons">
+          <div class="back-button">
+            <img src="img/leftChevron.png" alt="" />
+          </div>
+          <div class="follow-button"><span>追蹤</span></div>
+          <img class="share-button" src="img/share.png" alt="" />
+          <img class="options-button" src="img/options.png" alt="" />
+        </div>
+      </div>
+      <div class="profile-info">
+        <img src="img/levelBadge.png" alt="" class="level-badge" />
+        <span class="nickname Headline">你の野蠻小女友💋派派</span>
+        <img src="img/stats.png" alt="" class="profile-stats" />
+        <div class="profile-like"></div>
+      </div>
+      <div class="profile-content">
+        <div class="about-me">
+          <div class="section-title Title2">簡介</div>
+          <div class="content Body2">
+            <br />養了一隻吉娃娃 <br />奶茶控每天都想喝一杯
+            <br />有點小潔癖的處女座
+            <br />
+            <br />臉書↓↓↓↓
+            <br />
+            <br />https://is.gd/oQjX6V <br />IG: unaaa__0830
+            <br />
+            <br />記得追蹤follow <br />夠愛我就能走到我身邊
+            <br />你對我好..我也對你更好 <br />只要相信，就會實現
+            <!-- <br />就讓我們在初樂相遇 <br />一起實現夢想帶給更多人快樂吧
+            <br />養了一隻吉娃娃 <br />奶茶控每天都想喝一杯
+            <br />有點小潔癖的處女座
+            <br />
+            <br />臉書↓↓↓↓
+            <br />
+            <br />https://is.gd/oQjX6V <br />IG: unaaa__0830
+            <br />
+            <br />記得追蹤follow <br />夠愛我就能走到我身邊
+            <br />你對我好..我也對你更好 <br />只要相信，就會實現
+            <br />就讓我們在初樂相遇 <br />一起實現夢想帶給更多人快樂吧 -->
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="feed">
+          <div class="section-title Title2">動態</div>
+          <div class="content">
+            <div class="posts">
+              <div class="post post1"></div>
+              <div class="post post2"></div>
+              <div class="post post3"></div>
+              <div class="post post4"></div>
+              <div class="post post5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script>
+    let nav = document.querySelector(".nav-bar");
+    let profileImgs = document.querySelectorAll(".profile-img");
+    let profileContent = document.querySelector(".profile-content");
+    let wrapper = document.querySelector(".wrapper");
+    window.addEventListener("scroll", function() {
+      // console.log()
+      if (window.scrollY > 350) {
+        nav.classList.add("nav-scroll");
+      } else {
+        nav.classList.remove("nav-scroll");
+      }
+
+      if (window.scrollY > 0) {
+        profileImgs.forEach(img => img.classList.add("profile-scale"));
+      } else if (window.scrollY < 350) {
+        profileImgs.forEach(img => img.classList.remove("profile-scale"));
+      }
+    });
+    var swiper = new Swiper(".swiper-container", {
+      pagination: {
+        el: ".swiper-pagination"
+      }
+    });
+  </script>
+</html>
