@@ -89,6 +89,17 @@
     let profileImgs = document.querySelectorAll(".profile-img");
     let profileContent = document.querySelector(".profile-content");
     let wrapper = document.querySelector(".wrapper");
+    var swiper = new Swiper(".swiper-container", {
+      speed: 3000,
+      pagination: {
+        el: ".swiper-pagination"
+      },
+      autoplay: {
+        delay: 500
+      }
+    });
+    swiper.autoplay.start();
+
     window.addEventListener("scroll", function() {
       // console.log()
       if (window.scrollY > 350) {
@@ -102,10 +113,11 @@
       } else if (window.scrollY < 350) {
         profileImgs.forEach(img => img.classList.remove("profile-scale"));
       }
-    });
-    var swiper = new Swiper(".swiper-container", {
-      pagination: {
-        el: ".swiper-pagination"
+
+      if (window.scrollY == 0) {
+        swiper.autoplay.start();
+      } else {
+        swiper.autoplay.stop();
       }
     });
   </script>

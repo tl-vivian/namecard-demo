@@ -138,8 +138,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+.follow-button.active {
+}
 .swiper-wrapper {
   overscroll-behavior: none;
+}
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 120px;
+  z-index: 10;
+}
+.swiper-pagination-bullet-active {
+  background: var(--white);
 }
 .profile-imgs {
   width: 100vw;
@@ -152,6 +163,7 @@ body {
 .profile-img {
   background-size: auto 100%;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   transition: all 0.3s ease-in-out;
