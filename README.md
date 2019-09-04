@@ -19,7 +19,14 @@ https://tl-vivian.github.io/namecard-demo/
 ![](https://paper-attachments.dropbox.com/s_0243D5CDCA730DAAAF37F1260A6EE631E374860C1D5CF91767A98580D9FE0F1F_1567587136207_image.png)
 
 
-所以名片頁的最短長度應為 2x screenHeight - navigationBarHeight
+所以名片頁的最短長度應為 2x screenHeight - navigationBarHeight  
+
+
+### 名片內容如何影響捲動長度
+  
+直播主簡介雖然有限制字數，但是可以有很多空行。  
+當簡介因此變得很長時，簡介所在的範圍便會隨著內容擴張而變長，捲動的長度便會增加。  
+想要模擬此行為，可以刪減及增加簡介裡面的內容來觀察當簡介很長的時候，畫面的捲動行為。  
 
 
 ## 動畫效果
