@@ -87,6 +87,7 @@
   <script>
     let nav = document.querySelector(".nav-bar");
     let followButton = document.querySelector('.follow-button');
+    let likeButton = document.querySelector('.profile-like');
     let profileImgs = document.querySelectorAll(".profile-img");
     let profileContent = document.querySelector(".profile-content");
     let wrapper = document.querySelector(".wrapper");
@@ -108,6 +109,11 @@
       }else{
         followButton.firstChild.innerHTML = "＋ 追蹤"
       }
+    })
+
+    likeButton.addEventListener("click",function(){
+      likeButton.classList.add('active','pulse');
+      setTimeout(()=>{likeButton.classList.remove('pulse')},200)
     })
     window.addEventListener("scroll", function() {
       // console.log()

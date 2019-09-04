@@ -221,9 +221,21 @@ body {
   background-image: url("img/like.png");
   background-repeat: no-repeat;
   background-position: center;
+
   position: absolute;
   right: 24px;
   bottom: 32px;
+  transition:all 0.1s ease;
+}
+.profile-like.active{
+  background-size: 22px 22px;
+  background-image:url("img/likeFilled.png");
+  background-color: var(--white);
+  border: 1px solid var(--white);
+}
+.profile-like.pulse{
+  background-size: 24px 24px;
+  transition:all 0.1s ease;
 }
 .profile-content {
   min-height: calc(100vh - 64px);
