@@ -292,3 +292,9 @@ body {
 .post5 {
   background-image: url("img/post5.png");
 }
+.see-more-button{
+  color:var(--grey2);
+  position:absolute;
+  right:24px;
+  bottom:156px;
+}
