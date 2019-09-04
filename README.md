@@ -52,8 +52,10 @@ https://codepen.io/yunusekim/pen/XaBoNZ
 
 
 
+
 ## 直播中標籤動畫
 
+當直播主正在直播的時候，開播時間的位置會顯示一個直播中標籤
 
 
 ![](https://paper-attachments.dropbox.com/s_0243D5CDCA730DAAAF37F1260A6EE631E374860C1D5CF91767A98580D9FE0F1F_1567590545155_image.png)
