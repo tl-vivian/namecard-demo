@@ -30,7 +30,7 @@
           <div class="back-button">
             <img src="img/leftChevron.png" alt="" />
           </div>
-          <div class="follow-button"><span>追蹤</span></div>
+          <div class="follow-button"><span>＋ 追蹤</span></div>
           <img class="share-button" src="img/share.png" alt="" />
           <img class="options-button" src="img/options.png" alt="" />
         </div>
@@ -45,21 +45,21 @@
         <div class="about-me">
           <div class="section-title Title2">簡介</div>
           <div class="content Body2">
-            <br />養了一隻吉娃娃 <br />奶茶控每天都想喝一杯
+            <!-- <br />養了一隻吉娃娃 <br />奶茶控每天都想喝一杯
             <br />有點小潔癖的處女座
             <br />
             <br />臉書↓↓↓↓
-            <br />
+            <br /> -->
             <br />https://is.gd/oQjX6V <br />IG: unaaa__0830
             <br />
             <br />記得追蹤follow <br />夠愛我就能走到我身邊
             <br />你對我好..我也對你更好 <br />只要相信，就會實現
-            <!-- <br />就讓我們在初樂相遇 <br />一起實現夢想帶給更多人快樂吧
-            <br />養了一隻吉娃娃 <br />奶茶控每天都想喝一杯
+            <br />就讓我們在初樂相遇 <br />一起實現夢想帶給更多人快樂吧
+            <!-- <br />養了一隻吉娃娃 <br />奶茶控每天都想喝一杯
             <br />有點小潔癖的處女座
             <br />
             <br />臉書↓↓↓↓
-            <br />
+            <br />０
             <br />https://is.gd/oQjX6V <br />IG: unaaa__0830
             <br />
             <br />記得追蹤follow <br />夠愛我就能走到我身邊
@@ -86,11 +86,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script>
     let nav = document.querySelector(".nav-bar");
+    let followButton = document.querySelector('.follow-button');
     let profileImgs = document.querySelectorAll(".profile-img");
     let profileContent = document.querySelector(".profile-content");
     let wrapper = document.querySelector(".wrapper");
     var swiper = new Swiper(".swiper-container", {
-      speed: 3000,
+      speed: 4500,
       pagination: {
         el: ".swiper-pagination"
       },
@@ -100,6 +101,14 @@
     });
     swiper.autoplay.start();
 
+    followButton.addEventListener("click",function(){
+      followButton.classList.toggle('active');
+      if(followButton.classList.contains('active')){
+        followButton.firstChild.innerHTML = "追蹤中"
+      }else{
+        followButton.firstChild.innerHTML = "＋ 追蹤"
+      }
+    })
     window.addEventListener("scroll", function() {
       // console.log()
       if (window.scrollY > 350) {
