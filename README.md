@@ -62,3 +62,12 @@ https://codepen.io/yunusekim/pen/XaBoNZ
 
 此處動畫請參考：
 https://codepen.io/tl-vivian/pen/JjPOEQW
+
+
+
+## 喜歡按鈕動畫
+- 點擊愛心時，愛心會放大 1.1 倍隨即變回原來大小，按住的話會維持放大狀態
+- 點擊愛心時會從喜歡按鈕為源頭
+    噴發動態那邊的動畫，動畫會飛到畫面頂端消失，跟現在動態按喜歡相同
+    按住時，持續噴發動畫，但是按讚數量只算一次
+![](https://paper-attachments.dropbox.com/s_0243D5CDCA730DAAAF37F1260A6EE631E374860C1D5CF91767A98580D9FE0F1F_1567594608304_IMG_C5B6AFBFE513-1.jpeg)
