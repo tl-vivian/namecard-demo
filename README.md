@@ -4,6 +4,14 @@
 此 demo 的動畫效果僅為示意，請以此文件文字內容為主
 
 
+請使用 chrome developer tool 觀看此 demo
+或使用手機開這個網頁
+https://tl-vivian.github.io/namecard-demo/
+此 demo 理應忠實呈現名片頁在不同尺寸螢幕上面的行為
+
+
+![](https://paper-attachments.dropbox.com/s_0243D5CDCA730DAAAF37F1260A6EE631E374860C1D5CF91767A98580D9FE0F1F_1567594901969_image.png)
+
 ### 名片尺寸
 
 由於預期的行為，是名片往下捲之後，簡介跟動態的內容區塊可以捲動到 navigation bar （半透明黑色區塊，包含 status bar ) 之下
