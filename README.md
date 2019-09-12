@@ -82,6 +82,9 @@ https://codepen.io/tl-vivian/pen/JjPOEQW
 
 ## 喜歡按鈕動畫
 - 點擊愛心時，愛心會放大 1.1 倍隨即變回原來大小，按住的話會維持放大狀態
+- 一般愛心按鈕跟 pressed 狀態的愛心按鈕可以在這裡下載：
+https://drive.google.com/drive/folders/1QkpZiLqqnR8Ck_ReWP94eCLuAnbgpq5t  
+
 - 點擊愛心時會從喜歡按鈕為源頭
     噴發動態那邊的動畫，動畫會飛到畫面頂端消失，跟現在動態按喜歡相同  
     按住時，持續噴發動畫，但是按讚數量只算一次  
