@@ -72,7 +72,7 @@ body {
 
 .wrapper {
   width: 100vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
 }
 .top-shadow {
@@ -103,7 +103,7 @@ body {
 .status-bar {
   margin: 0 -16px;
   min-width: 100%;
-  height: 20px;
+  min-height: 20px;
   background-image: url("img/statusBar.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -193,7 +193,7 @@ body {
 .profile-info {
   height: 225px;
   width: 100%;
-  background-image: url("img/bottomGradientShadeWhite.png");
+  background-image: url("img/bottom_gradient_shade_white.svg");
   position: relative;
   padding-left: 24px;
   padding-right: 24px;
@@ -238,9 +238,9 @@ body {
   transition:all 0.1s ease;
 }
 .profile-content {
-  min-height: calc(100vh - 64px);
+  /* min-height: calc(100vh - 64px); */
   width: 100%;
-  background-color: var(--white90);
+  background-color: var(--white);
   padding: 16px 24px 24px 24px;
 }
 
@@ -250,9 +250,16 @@ body {
 }
 
 .about-me {
-  min-height: calc(100vh - 272px);
+ position:relative;
 }
-
+.expand-button{
+  color:var(--grey2);
+  position:absolute;
+  right:0px;
+  top:0px;
+  display: flex;
+  align-items: center;
+}
 .divider {
   width: 100%;
   height: 16px;
@@ -297,4 +304,6 @@ body {
   position:absolute;
   right:24px;
   bottom:156px;
+  display: flex;
+  align-items: center;
 }
